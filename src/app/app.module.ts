@@ -10,6 +10,16 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GlobalModule } from './global/global.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
+import { HomeAboutusComponent } from './home/home-aboutus/home-aboutus.component';
+import { HomeGalleryComponent } from './home/home-gallery/home-gallery.component';
+import { HomeTimelineComponent } from './home/home-timeline/home-timeline.component';
+import { HomePressComponent } from './home/home-press/home-press.component';
+import { HomeUpdatesComponent } from './home/home-updates/home-updates.component';
+import { HomeLandingvideoComponent } from './home/home-landingvideo/home-landingvideo.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -19,12 +29,22 @@ import { GlobalModule } from './global/global.module';
     GalleryComponent,
     TeamComponent,
     ContactComponent,
+    HomeLandingvideoComponent,
+    HomeAboutusComponent,
+    HomeGalleryComponent,
+    HomeTimelineComponent,
+    HomePressComponent,
+    HomeUpdatesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    GlobalModule
+    GlobalModule,
+    FlexLayoutModule,
+    MatCardModule,
+    CarouselModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

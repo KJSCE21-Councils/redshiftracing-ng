@@ -1,0 +1,21 @@
+.content {
+    width:100%;
+}
+.content > div {
+    padding:10px!important;
+}
+@media (min-width: 768px) {
+    #about {
+        width: 90%;
+   }
+}
+@media (min-width: 992px) {
+    #about {
+        width: 80%;
+   }
+}
+@media (min-width: 1200px) {
+    #about {
+        width: 70%;
+   }
+}

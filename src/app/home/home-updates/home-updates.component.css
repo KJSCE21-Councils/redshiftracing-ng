@@ -1,0 +1,21 @@
+.content {
+    width:100%;
+}
+.content > div {
+    padding:10px!important;
+}
+@media (min-width: 768px) {
+    #home-updates {
+        width: 90%;
+   }
+}
+@media (min-width: 992px) {
+    #home-updates {
+        width: 80%;
+   }
+}
+@media (min-width: 1200px) {
+    #home-updates {
+        width: 70%;
+   }
+}

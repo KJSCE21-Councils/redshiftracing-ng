@@ -6,19 +6,19 @@
   flex-direction: column;
   height: 100%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 960px) {
   mat-toolbar {
-    justify-content: space-between;
-  }
+      justify-content: space-between;
+ }
   #menutoggler {
-    display: none;
-  }
+      display: none;
+ }
 }
 @media screen and (max-width: 600px) {
   .collegelogos {
-    display: none;
-  }
+      display: none;
+ }
   #logo {
-    margin-left: 5%;
-  }
+      margin-left: 5%;
+ }
 }
