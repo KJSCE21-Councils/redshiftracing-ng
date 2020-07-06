@@ -1,0 +1,24 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+@media screen and (min-width: 600px) {
+  mat-toolbar {
+    justify-content: space-between;
+  }
+  #menutoggler {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .collegelogos {
+    display: none;
+  }
+  #logo {
+    margin-left: 5%;
+  }
+}

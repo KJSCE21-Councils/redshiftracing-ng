@@ -1,0 +1,15 @@
+<header>
+    <div id="navigation"></div>
+    <!-- <div class="overlay"></div> -->
+    <video id="rsr-video" playsinline="playsinline" autoplay="autoplay" muted loop="loop" controls style="height:100%;">
+        <source src="../../assets/videos/rsr.mp4" type="video/mp4" />
+    </video>
+    <!-- Script used to force play video in Chrome Data Saver Mode -->
+    <script>
+        if ('connection' in navigator) {
+            if (navigator.connection.saveData) {
+                document.getElementById("rsr-video").play();
+            }
+        }
+    </script>
+</header>
