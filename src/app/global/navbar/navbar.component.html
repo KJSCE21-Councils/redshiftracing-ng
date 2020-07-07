@@ -6,9 +6,11 @@
         <!-- </button> -->
         <!-- </div> -->
     </button>
-    <img src="../../../assets/images/rsr-logo.jpg" style="max-height:45px;" id="logo">
+    <span style="margin:0;padding:0;min-width:254px;max-height:45px;">
+        <img src="../../../assets/images/rsr-logo.jpg" style="max-height:45px;" id="logo">
+    </span>
     <!-- <span class="example-spacer"></span> -->
-    <div fxShow="true" fxHide.lt-md="true" style="margin-left:auto;">
+    <div fxShow="true" fxHide.lt-md="true" style="margin-left:auto;margin-right:auto;">
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
         <a routerLink="/" mat-button>Home</a>
         <a routerLink="/sponsors" mat-button>Sponsors</a>
@@ -16,7 +18,7 @@
         <a routerLink="/team" mat-button>Team</a>
         <a routerLink="/contact" mat-button>Contact</a>
     </div>
-    <div style="display:flex;flex-wrap: nowrap;justify-content:center;margin-left:auto;" id="collegelogo">
+    <div style="display:flex;flex-wrap: nowrap;justify-content:center;" id="collegelogo">
         <a href="https://kjsce.somaiya.edu/en" target="_blank" style="max-height:45px;" class="collegelogos">
             <img src="../../../assets/images/logos/kjsce-svu.svg" alt="KJSCE-SVU"
                 style="max-height:45px;margin-right:10px;">
@@ -45,16 +47,30 @@
             <a mat-list-item routerLinkActive="list-item-active" routerLink="/contact"
                 (click)="drawer.toggle()">Contact</a>
             <mat-divider></mat-divider>
-            <div style="display:flex;flex-wrap: nowrap;justify-content:center;padding:15px;">
+            <div style="display:flex;flex-wrap:nowrap;justify-content:space-evenly;padding:10px 0px;">
                 <a href="https://kjsce.somaiya.edu/en" target="_blank">
                     <img src="../../../assets/images/logos/kjsce-svu.svg" alt="KJSCE-SVU"
-                        style="max-height:50px;margin-right:15px;">
+                        style="max-height:45px;margin-right:0px;">
                 </a>
                 <a href="https://svv.somaiya.edu/en" target="_blank">
                     <img src="../../../assets/images/logos/SomaiyaTrust_Logo.jpg" alt="Somaiya Trust"
-                        style="max-height:50px;margin-left:15px;">
+                        style="max-height:45px;margin-left:0px;">
                 </a>
             </div>
+            <mat-divider></mat-divider>
+            <div style="display:flex;flex-wrap:nowrap;justify-content:space-evenly;padding:10px 0px;">
+                <a href="https://www.facebook.com/redshiftracing.kjsce" target="_blank"><i
+                        class="fa fa-facebook-official fa-lg fa-2x"></i></a>
+                <a href="https://in.linkedin.com/company/redshift-racing-india" target="_blank"><i
+                        class="fa fa-linkedin fa-lg fa-2x"></i></a>
+                <a href="https://twitter.com/redshiftracing" target="_blank"><i
+                        class="fa fa-twitter fa-lg fa-2x"></i></a>
+                <a href="https://www.youtube.com/user/redshiftracing" target="_blank"><i
+                        class="fa fa-youtube-play fa-lg fa-2x"></i></a>
+                <a href="https://www.instagram.com/redshift_racing/" target="_blank"><i
+                        class="fa fa-instagram fa-lg fa-2x"></i></a>
+            </div>
+            <mat-divider></mat-divider>
         </mat-nav-list>
     </mat-drawer>
     <mat-drawer-content>
