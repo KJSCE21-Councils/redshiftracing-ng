@@ -1,1 +1,104 @@
-<p>contact works!</p>
+<div class="container">
+    <section id="contact" style="margin:auto;padding:20px 0px;">
+        <h1 class="mat-display-1" style="text-align:center;margin:0px;padding-bottom:5px;">Contact us</h1>
+        <div class="content" fxLayout="row wrap" fxLayoutGap="16px grid" style="align-items:stretch;">
+            <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="50%" fxLayoutAlign="stretch">
+                <mat-card style="width:100%;">
+                    <mat-card-header fxLayoutAlign="center">
+                        <mat-card-title style="margin:0px!important;">
+                            Kaushal Wattamwar
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-actions style="display:flex;flex-direction:column;">
+                        <a href="tel:+919527831020" mat-stroked-button
+                            style="width:100%!important;text-align:center;margin:5px 0px!important;">
+                            <span class="material-icons">
+                                call
+                            </span>
+                            <span style="padding-left:5px;">+91 9527831020</span>
+                        </a>
+                        <a href="mailto:kaushal.w@somaiya.edu" mat-stroked-button
+                            style="width:100%!important;text-align:center;margin:0px!important;">
+                            <span class="material-icons">
+                                email
+                            </span>
+                            <span style="padding-left:5px;">kaushal.w@somaiya.edu</span>
+                        </a>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+            <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="50%" fxLayoutAlign="stretch">
+                <mat-card style="width:100%;">
+                    <mat-card-header fxLayoutAlign="center">
+                        <mat-card-title style="margin:0px!important;">
+                            Chaitanya Sonalkar
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-actions style="display:flex;flex-direction:column;">
+                        <a href="tel:+919867587017" mat-stroked-button
+                            style="width:100%!important;text-align:center;margin:5px 0px!important;">
+                            <span class="material-icons">
+                                call
+                            </span>
+                            <span style="padding-left:5px;">+91 9867587017</span>
+                        </a>
+                        <a href="mailto:c.sonalkar@somaiya.edu" mat-stroked-button
+                            style="width:100%!important;text-align:center;margin:0px!important;">
+                            <span class="material-icons">
+                                email
+                            </span>
+                            <span style="padding-left:5px;">c.sonalkar@somaiya.edu</span>
+                        </a>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </section>
+    <section id="contact" style="margin:auto;padding:20px 0px;">
+        <h1 class="mat-display-1" style="text-align:center;margin:0px;padding-bottom:10px;">Reach us</h1>
+        <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 450px">
+            <iframe src="https://maps.google.com/maps?q=redshift%20racing%20india&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="contact" style="margin:auto;padding:20px 0px;">
+        <h1 class="mat-display-1" style="text-align:center;margin:0px;padding-bottom:10px;">Write to us</h1>
+        <div class="content" fxLayout="row wrap" fxLayoutGap="16px"
+            style="align-items:stretch;justify-content: center;">
+            <mat-card style="width:85%;">
+                <form action="/contact" method="POST">
+                    <mat-form-field appearance="standard">
+                        <mat-label>Enter your name</mat-label>
+                        <input matInput placeholder="Kaushal Wattamwar">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="standard">
+                        <mat-label>Enter your email</mat-label>
+                        <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field hintLabel="Max 10 characters" appearance="standard">
+                        <mat-label>Enter your number</mat-label>
+                        <input matInput #input minlength="10" maxlength="10" placeholder="9527831020">
+                        <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="standard">
+                        <mat-label>Enter subject</mat-label>
+                        <input matInput placeholder="Brief about your message">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="standard">
+                        <mat-label>Textarea</mat-label>
+                        <textarea matInput placeholder="Hey team! We are writing you for..."></textarea>
+                    </mat-form-field>
+                    <br>
+                    <div style="text-align:center;">
+                        <button mat-stroked-button (click)="openSnackBar('Message Sent!','Dismiss')">Send</button>
+                    </div>
+                </form>
+            </mat-card>
+        </div>
+    </section>
+</div>

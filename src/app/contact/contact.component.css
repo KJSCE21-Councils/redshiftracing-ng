@@ -1,0 +1,59 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+   }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+   }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+   }
+}
+.content {
+    width:100%;
+}
+.content > div {
+    padding:10px!important;
+}
+@media (min-width: 768px) {
+    #contact {
+        width: 90%;
+   }
+}
+@media (min-width: 992px) {
+    #contact {
+        width: 80%;
+   }
+}
+@media (min-width: 1200px) {
+    #contact {
+        width: 70%;
+   }
+}
+.map-container-6 {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.map-container-6 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+mat-form-field,
+mat-form-field > input {
+    width:100%!important;
+}
