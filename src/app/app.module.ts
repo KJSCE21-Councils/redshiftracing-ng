@@ -20,6 +20,9 @@ import { HomeUpdatesComponent } from './home/home-updates/home-updates.component
 import { HomeLandingvideoComponent } from './home/home-landingvideo/home-landingvideo.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDividerModule } from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
@@ -45,6 +48,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     CarouselModule,
     MatButtonModule,
+    MatTabsModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

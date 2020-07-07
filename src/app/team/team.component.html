@@ -1,1 +1,25 @@
-<p>team works!</p>
+<section id="teams" style="margin:auto;padding:20px 0px;">
+  <h1 class="mat-display-1" style="text-align:center;margin:0px;">Teams</h1>
+  <mat-tab-group dynamicHeight style="padding:10px;">
+    <div *ngFor="let team of teams">
+      <mat-tab label="{{team.title}}">
+        <img src="{{BASE_PATH+team.team_photo}}" style="width:100%;">
+        <div class="content" style="justify-content:left;padding-top:10px;" fxLayout="row wrap" fxLayoutGap="16px grid">
+          <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch" *ngFor="let m of team.members">
+            <mat-card style="width:100%;padding:5px!important;">
+              <mat-card-header style="padding:5pximportant;">
+                <mat-card-subtitle style="margin:0px;padding:5px 0px;">{{m.designation}}</mat-card-subtitle>
+              </mat-card-header>
+              <mat-divider></mat-divider>
+              <mat-card-content style="padding:7px!important;">
+                <div *ngFor="let name of m.names">
+                  {{"&#8226; "+name}}
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </mat-tab>
+    </div>
+  </mat-tab-group>
+</section>

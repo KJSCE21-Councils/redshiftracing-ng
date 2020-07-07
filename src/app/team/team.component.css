@@ -1,0 +1,22 @@
+.content {
+    width:100%;
+    margin:0px!important;
+}
+.content > div {
+    padding:10px!important;
+}
+@media (min-width: 768px) {
+    #teams {
+        width: 90%;
+   }
+}
+@media (min-width: 992px) {
+    #teams {
+        width: 80%;
+   }
+}
+@media (min-width: 1200px) {
+    #teams {
+        width: 70%;
+   }
+}
