@@ -1,1 +1,14 @@
-<p>gallery works!</p>
+<div id="gallery">
+    <section id="content" style="margin:auto;padding:20px 0px;">
+        <h1 class="mat-display-1" style="text-align:center;margin:0px;padding-bottom:20px;">Redshift Gallery</h1>
+        <div style="height:80vh!important;">
+            <iframe src="https://www.youtube.com/embed/?listType=user_uploads&list=redshiftracing" width="100%"
+                height="100%" autoplay frameborder="0"></iframe>
+        </div>
+    </section>
+    <div class="content" style="justify-content:center;" fxLayout="row wrap" fxLayoutGap="1px grid">
+        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch" *ngFor="let img of gallery">
+            <img id="image" style="width:100%;" mat-card-image src="{{BASE_PATH+img.image}}">
+        </div>
+    </div>
+</div>

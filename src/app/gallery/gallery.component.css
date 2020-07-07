@@ -1,0 +1,34 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+   }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+   }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+   }
+}
+.content {
+    width:100%;
+}
+.content > div {
+    padding:1px!important;
+}
+#image {
+    filter: brightness(0.7);
+}
+#image:hover {
+    filter: brightness(1);
+    cursor: pointer;
+}
