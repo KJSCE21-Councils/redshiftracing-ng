@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeGalleryComponent implements OnInit {
 
+  BASE_PATH = "../../../assets/images/rsr/";
+  home_gallery = [
+    'rsr18.jpeg',
+    'rsr28.jpeg',
+    'rsr27.jpeg',
+    'rsr26.jpeg',
+    'rsr25.JPEG',
+    'rsr24.jpeg',
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

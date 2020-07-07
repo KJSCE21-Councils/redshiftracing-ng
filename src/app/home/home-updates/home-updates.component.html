@@ -1,73 +1,12 @@
-<section id="home-updates" style="margin:auto;padding-top:20px;">
-    <h1 class="mat-display-1" style="text-align:center;margin:0px;">Updates</h1>
+<section id="home-updates" style="margin:auto;padding:20px 0px;">
+    <h1 class="mat-display-1" style="text-align:center;margin:0px;padding-bottom:20px;">Updates</h1>
     <div class="content" style="justify-content:center;" fxLayout="row wrap" fxLayoutGap="16px grid">
-        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch">
+        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch"
+            *ngFor="let home_updates of home_updates">
             <mat-card>
-                <img mat-card-image src="../../../assets/images/updates/JohnAbraham.jpg">
+                <img mat-card-image src="{{BASE_PATH+home_updates.img}}">
                 <mat-card-content>
-                    <p>
-                        Mr. John Abraham wishes the team best luck
-                    </p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch">
-            <mat-card>
-                <img mat-card-image src="../../../assets/images/updates/DNA_AutoFest.jpg">
-                <mat-card-content>
-                    <p>
-                        RedShift Racing India at DNA AutoFest 2019
-                    </p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch">
-            <mat-card>
-                <img mat-card-image src="../../../assets/images/updates/Abhiyantriki2019.jpg">
-                <mat-card-content>
-                    <p>
-                        RedShift Racing India at Abhiyantriki 2019
-                    </p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch">
-            <mat-card>
-                <img mat-card-image src="../../../assets/images/updates/MET_HCS.jpg">
-                <mat-card-content>
-                    <p>
-                        RedShift Racing India at MET HCS
-                    </p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch">
-            <mat-card>
-                <img mat-card-image src="../../../assets/images/updates/up1.jpeg">
-                <mat-card-content>
-                    <p>
-                        RedShift Racing India meets CM Devendra Fadnavis
-                    </p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch">
-            <mat-card>
-                <img mat-card-image src="../../../assets/images/updates/up2.jpeg">
-                <mat-card-content>
-                    <p>
-                        RedShift Racing India at DNA Auto Show 2017
-                    </p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch">
-            <mat-card>
-                <img mat-card-image src="../../../assets/images/updates/up3.jpeg">
-                <mat-card-content>
-                    <p>
-                        RedShift Racing India at Story of Makers by KVO
-                    </p>
+                    {{home_updates.content}}
                 </mat-card-content>
             </mat-card>
         </div>

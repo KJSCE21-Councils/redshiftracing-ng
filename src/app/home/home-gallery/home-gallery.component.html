@@ -2,23 +2,8 @@
 	<h1 class="mat-display-1" style="text-align:center;margin:0px;padding-bottom:20px;">Gallery</h1>
 	<div>
 		<owl-carousel-o [options]="customOptionsHomeGallery">
-			<ng-template carouselSlide>
-				<img class="rounded" src="../../../assets/images/rsr/rsr18.jpeg">
-			</ng-template>
-			<ng-template carouselSlide>
-				<img class="rounded" src="../../../assets/images/rsr/rsr28.jpeg">
-			</ng-template>
-			<ng-template carouselSlide>
-				<img class="rounded" src="../../../assets/images/rsr/rsr27.jpeg">
-			</ng-template>
-			<ng-template carouselSlide>
-				<img class="rounded" src="../../../assets/images/rsr/rsr26.jpeg">
-			</ng-template>
-			<ng-template carouselSlide>
-				<img class="rounded" src="../../../assets/images/rsr/rsr25.JPEG">
-			</ng-template>
-			<ng-template carouselSlide>
-				<img class="rounded" src="../../../assets/images/rsr/rsr24.jpeg">
+			<ng-template carouselSlide *ngFor="let img of home_gallery">
+				<img class="rounded" src="{{BASE_PATH+img}}">
 			</ng-template>
 		</owl-carousel-o>
 	</div>

@@ -1,220 +1,42 @@
 <section id="home-gallery" style="margin:auto;padding-top:25px;">
     <div class="page-header" style="text-align:center;">
-        <h1 class="mat-display-1" style="text-align:center;margin:0px;padding-bottom:20px;">Journey So Far</h1>
+        <h1 class="mat-display-1" style="text-align:center;margin:0px;padding-bottom:0px;">Journey So Far</h1>
     </div>
     <br />
     <ul class="timeline">
-        <li>
-            <div class="timeline-badge primary">
-                <a><i class="fa fa-circle" rel="tooltip"></i></a>
-            </div>
-            <mat-card class="timeline-panel">
-                <div class="timeline-heading">
-                    <img class="img-fluid" src="../../../assets/images/success/tabeer.jpeg" />
+        <ng-container *ngFor="let home_timeline of home_timeline">
+            <li class="{{home_timeline.timeline_inverted}}">
+                <div class="timeline-badge primary">
+                    <a><i class="fa fa-circle {{home_timeline.tooltip_inverted}}" rel="tooltip"></i></a>
                 </div>
-                <mat-card-content class="timeline-body">
-                    <b style="text-align:center;"><u>Tabeer</u></b><br />
-                    <b>Competition</b><br />
-                    &#9679; BAJA SAE Rochester, New York 2019<br />
-                    &#9679; Mega ATV Championship<br />
-                    <b>Achievements</b><br />
-                    &#9679; 1st Place - Drag Race, Mega ATV<br />
-                    <b>Technical Highlights</b><br />
-                    &#9679; Vibration Isolation for Engine<br />
-                    &#9679; Self made brake calliper for inboard braking
-                </mat-card-content>
-            </mat-card>
-        </li>
-        <li class="timeline-inverted">
-            <div class="timeline-badge primary">
-                <a><i class="fa fa-circle" rel="tooltip"></i></a>
-            </div>
-            <mat-card class="timeline-panel">
-                <div class="timeline-heading">
-                    <img class="img-fluid" src="../../../assets/images/success/yudhaan3.jpg" />
-                </div>
-                <mat-card-content class="timeline-body">
-                    <b style="text-align:center;"><u>Yudhaan 3.0</u></b><br />
-                    <b>Competition</b><br />
-                    &#9679; BAJA SAE Indore 2019<br />
-                    &#9679; BAJA SAE USA, Oregon 2018<br />
-                    <b>Achievements</b><br />
-                    &#9679; 4th Place - India Virtuals<br />
-                    &#9679; 9th Place - Design at Indore<br />
-                    &#9679; 3rd Place – Overall ranking in India<br />
-                    &#9679; 8th Place – Cost Evaluation<br />
-                    &#9679; 6th Place – Business Plan Presentation<br />
-                    <b>Technical Highlights</b><br />
-                    &#9679; Tuning of the CVT to ensure efficient working of
-                    transmission failure.
-                </mat-card-content>
-            </mat-card>
-        </li>
-        <li>
-            <div class="timeline-badge primary">
-                <a><i class="fa fa-circle invert" rel="tooltip"></i></a>
-            </div>
-            <mat-card class="timeline-panel">
-                <div class="timeline-heading">
-                    <img class="img-fluid" src="../../../assets/images/success/yudhaan2.jpg" />
-                </div>
-                <mat-card-content class="timeline-body">
-                    <b style="text-align:center;"><u>Yudhaan 2.0</u></b><br />
-                    <b>Competition</b><br />
-                    &#9679; Enduro Student India 2018.<br />
-                    &#9679; BAJA SAE India 2018.<br />
-                    <b>Achievements</b><br />
-                    &#9679; 23rd Place – Overall amongst 90 participating teams.<br />
-                    &#9679; 3rd Place – Engineering Design.<br />
-                    &#9679; 4th Place – Business Plan Presentation.<br />
-                    &#9679; 17th Place – DirtX.<br />
-                    <b>Technical Highlights</b><br />
-                    &#9679; Self Made Axle.<br />
-                    &#9679; Self Made Brake Calipers.<br />
-                    &#9679; Custom Made Brake Lines.<br />
-                </mat-card-content>
-            </mat-card>
-        </li>
-        <li class="timeline-inverted">
-            <div class="timeline-badge primary">
-                <a><i class="fa fa-circle" rel="tooltip"></i></a>
-            </div>
-            <mat-card class="timeline-panel">
-                <div class="timeline-heading">
-                    <img class="img-fluid" src="../../../assets/images/success/yudhaan.jpg" />
-                </div>
-                <mat-card-content class="timeline-body">
-                    <b style="text-align:center;"><u>Yudhaan 1.0</u></b><br />
-                    <b>Competition</b><br />
-                    &#9679; Enduro Student India 2017.<br />
-                    &#9679; BAJA SAE India 2017.<br />
-                    &#9679; BAJA SAE USA, California 2017.<br />
-                    <b>Achievements</b><br />
-                    &#9679; 11th Place – Overall ranking in India.<br />
-                    &#9679; 9th Place – Endurance Race.<br />
-                    &#9679; 3rd Place – Business Plan Presentation.<br />
-                    &#9679; 15th Place – Acceleration.<br />
-                </mat-card-content>
-            </mat-card>
-        </li>
-        <li>
-            <div class="timeline-badge primary">
-                <a><i class="fa fa-circle invert" rel="tooltip"></i></a>
-            </div>
-            <mat-card class="timeline-panel">
-                <div class="timeline-heading">
-                    <img class="img-fluid" src="../../../assets/images/success/raudr3.jpg" />
-                </div>
-                <mat-card-content class="timeline-body">
-                    <b style="text-align:center;"><u>Raudr III</u></b><br />
-                    <b>Competition</b><br />
-                    &#9679; Baja SAE India,Indore 2015.<br />
-                    <b>Achievements</b><br />
-                    &#9679; Completed all dynamic events and endurance race.<br />
-                    &#9679; 7th Place – Hill Climb.<br />
-                    &#9679; 11th Place – Static events.<br />
-                    &#9679; 2nd Place – Overall Ranking in Mumbai.<br />
-                    <b>Technical Highlights</b><br />
-                    &#9679; Suspension design changed to Semi trailing arm in rear.<br />
-                    &#9679; Weight reduction of 70kgs was achieved compared to
-                    Raudra2.<br />
-                    &#9679; Steering radius was further reduced to 2.16m.<br />
-                    &#9679; Driver effort was comparitvely less.<br />
-                </mat-card-content>
-            </mat-card>
-        </li>
-        <li class="timeline-inverted">
-            <div class="timeline-badge primary">
-                <a><i class="fa fa-circle" rel="tooltip"></i></a>
-            </div>
-            <mat-card class="timeline-panel">
-                <div class="timeline-heading">
-                    <img class="img-fluid" src="../../../assets/images/success/raudr2.jpg" />
-                </div>
-                <mat-card-content class="timeline-body">
-                    <b style="text-align:center;"><u>Raudr II</u></b><br />
-                    <b>Competition</b><br />
-                    &#9679; Sasol Baja South Africa Challenge 2014.<br />
-                    <b>Achievements</b><br />
-                    &#9679; Best Social Team Award.<br />
-                    &#9679; 1st Place – Business Plan Presentation.<br />
-                    &#9679; 4th Place – Car Design Evaluation.<br />
-                    &#9679; 6th Place – Design Report.<br />
-                    &#9679; 10th Place – Overall Ranking.<br />
-                    <b>Technical Highlights</b><br />
-                    &#9679; Overall weight reduction of 38 Kgs from the previous
-                    car.<br />
-                    &#9679; Implementation of a differential for the 1st time.<br />
-                    &#9679; Cost effective and reduced weight for the self-designed
-                    gearbox assembly.<br />
-                    &#9679; Steering turning radius reduced from 4.00 m to 2.85 m.<br />
-                    &#9679; Tuning of the CVT to ensure efficient working of
-                    transmission failure.<br />
-                    &#9679; Serviceability ensured through proper design of assembly
-                    layout.<br />
-                    &#9679; Pneumatic shock absorbers for suspension.<br />
-                </mat-card-content>
-            </mat-card>
-        </li>
-        <li>
-            <div class="timeline-badge primary">
-                <a><i class="fa fa-circle invert" rel="tooltip"></i></a>
-            </div>
-            <mat-card class="timeline-panel">
-                <div class="timeline-heading">
-                    <img class="img-fluid" src="../../../assets/images/success/raudr.jpg" />
-                </div>
-                <mat-card-content class="timeline-body">
-                    <b style="text-align:center;"><u>Raudr</u></b><br />
-                    <b>Competition</b><br />
-                    &#9679; BAJA SAE India 2014.<br />
-                    <b>Achievements</b><br />
-                    s1st time completed all Dynamic and Static events.<br />
-                    &#9679; 1st time qualified for final Endurance race.<br />
-                    &#9679; 34th Grid position for Endurance race.<br />
-                    &#9679; Appreciation for aesthetics of the car.<br />
-                    <b>Technical Highlights</b><br />
-                    &#9679; Self designed gearbox assembly.<br />
-                    &#9679; Tuning of the CVT to ensure efficient working of
-                    transmission failure.<br />
-                    &#9679; Pneumatic shock absorbers for suspension.<br />
-                    &#9679; Glass fibre used for bodyworks.<br />
-                </mat-card-content>
-            </mat-card>
-        </li>
-        <li class="timeline-inverted">
-            <div class="timeline-badge primary">
-                <a><i class="fa fa-circle" rel="tooltip"></i></a>
-            </div>
-            <mat-card class="timeline-panel">
-                <div class="timeline-heading">
-                    <img class="img-fluid" src="../../../assets/images/success/blunderbuss.jpg" />
-                </div>
-                <mat-card-content class="timeline-body">
-                    <b style="text-align:center;"><u>BlunderBuss</u></b><br />
-                    <b>Competition</b><br />
-                    &#9679; Baja SAE India 2013.<br />
-                </mat-card-content>
-            </mat-card>
-        </li>
-        <li>
-            <div class="timeline-badge primary">
-                <a><i class="fa fa-circle invert" rel="tooltip"></i></a>
-            </div>
-            <mat-card class="timeline-panel">
-                <div class="timeline-heading">
-                    <img class="img-fluid" src="../../../assets/images/success/rsr11-12.jpg" />
-                </div>
-                <mat-card-content class="timeline-body">
-                    <b style="text-align:center;"><u>RSR 2011-12</u></b><br />
-                    <b>Competition</b><br />
-                    &#9679; Baja SAE Auburn 2012.<br />
-                    <b>Achievements</b><br />
-                    &#9679; 24th Place – Car Design Evaluation.<br />
-                    &#9679; Top amongst all Asian teams.<br />
-                </mat-card-content>
-            </mat-card>
-        </li>
+                <mat-card class="timeline-panel">
+                    <div class="timeline-heading">
+                        <img class="img-fluid" src="{{BASE_PATH+home_timeline.img}}" />
+                    </div>
+                    <mat-card-content class="timeline-body" style="padding:15px;">
+                        <b style="text-align:center;"><u>{{home_timeline.title}}</u></b><br />
+                        <ng-container *ngIf="home_timeline.competitions||home_timeline.competitions?.length > 0">
+                            <b>Competitions</b><br />
+                            <div *ngFor="let competitions of home_timeline.competitions">
+                                {{"&#9679; "+competitions}}
+                            </div>
+                        </ng-container>
+                        <ng-container *ngIf="home_timeline.achievements||home_timeline.achievements?.length > 0">
+                            <b>Achievements</b><br />
+                            <div *ngFor="let achievements of home_timeline.achievements">
+                                {{"&#9679; "+achievements}}
+                            </div>
+                        </ng-container>
+                        <ng-container *ngIf="home_timeline.tech_highlights||home_timeline.tech_highlights?.length > 0">
+                            <b>Technical Highlights</b><br />
+                            <div *ngFor="let tech_highlights of home_timeline.tech_highlights">
+                                {{"&#9679; "+tech_highlights}}
+                            </div>
+                        </ng-container>
+                    </mat-card-content>
+                </mat-card>
+            </li>
+        </ng-container>
         <li class="clearfix" style="float: none;"></li>
     </ul>
 </section>
