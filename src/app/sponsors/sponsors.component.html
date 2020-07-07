@@ -1,1 +1,17 @@
-<p>sponsors works!</p>
+<div class="container">
+    <section id="sponsors" style="margin:auto;padding:20px 0px;">
+        <h1 class="mat-display-1" style="text-align:center;margin:0px;padding-bottom:20px;">Sponsors</h1>
+        <div class="content" style="justify-content:center;" fxLayout="row wrap" fxLayoutGap="16px grid">
+            <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutAlign="stretch"
+                *ngFor="let home_updates of sponsors">
+                <mat-card style="width:100%;">
+                    <img mat-card-image src="{{BASE_PATH+home_updates.logo}}">
+                </mat-card>
+            </div>
+        </div>
+    </section>
+    <section  style="margin:auto;padding:20px 0px;" Flex fxLayout="row" fxLayoutAlign="center" fxLayoutGap="20px">
+        <a href="../../assets/Marketing 2019-20.pdf" target="_blank" mat-raised-button color="warn">Why sponsor us ?</a>
+        <a routerLink="/contact" mat-raised-button color="warn">Contribute</a>
+    </section>
+</div>
