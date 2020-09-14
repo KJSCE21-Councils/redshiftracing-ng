@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeUpdatesComponent implements OnInit {
 
-  BASE_PATH = "../../../assets/images/updates/";
+  BASE_PATH = "assets/images/updates/";
 
   home_updates = [
     {

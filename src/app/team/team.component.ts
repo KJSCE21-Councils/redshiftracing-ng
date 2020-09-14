@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  BASE_PATH = "../../assets/images/teams/";
+  BASE_PATH = "assets/images/teams/";
 
   constructor() { }
 

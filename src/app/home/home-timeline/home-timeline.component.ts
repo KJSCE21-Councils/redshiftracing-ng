@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeTimelineComponent implements OnInit {
 
-  BASE_PATH = "../../../assets/images/success/";
+  BASE_PATH = "assets/images/success/";
 
   home_timeline = [
     {

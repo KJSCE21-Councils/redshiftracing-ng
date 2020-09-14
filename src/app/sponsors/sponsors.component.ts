@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SponsorsComponent implements OnInit {
 
-  BASE_PATH = "../../../assets/images/sponsors/"
+  BASE_PATH = "assets/images/sponsors/"
 
   sponsors = [
     {

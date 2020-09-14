@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePressComponent implements OnInit {
 
-  BASE_PATH = "../../../assets/images/press/";
+  BASE_PATH = "assets/images/press/";
 
   home_stories = [
     {

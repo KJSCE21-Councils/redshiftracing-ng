@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  BASE_PATH = '../../../assets/images/rsr/';
+  BASE_PATH = 'assets/images/rsr/';
 
   gallery = [
     {
